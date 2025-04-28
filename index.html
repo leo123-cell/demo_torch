@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI 贪吃蛇游戏</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.18.0/dist/tf.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #game-container {
+            margin: 20px;
+            border: 2px solid #333;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .controls {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>AI 贪吃蛇游戏</h1>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+    </div>
+    <div class="controls">
+        <p>游戏控制：</p>
+        <ul>
+            <li>游戏会自动运行</li>
+            <li>按 R 键重新开始</li>
+            <li>按 ESC 键退出</li>
+        </ul>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 
